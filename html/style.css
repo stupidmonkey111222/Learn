@@ -1,17 +1,24 @@
+body{margin:0px;}
+nav{
+    display:flex;
+}
 nav>.logo{
+    flex:none;width:100px;
     background-color: #ffcccc;
 }
 
 nav>.menu{
+    flex:auto;
     background-color: #ccccff;
 }
 
 nav>.user{
+    flex:none;width:100px;
     background-color: #ccffcc;
 }
 
 main{
-    display:flex;
+    display:flex;flex-wrap:wrap;
     justify-content: center;  #水平对齐
     align-items:stretch;   #垂直对齐
     background-color: #cccccc;
@@ -19,6 +26,16 @@ main{
 
 main>.item{
     flex:none;
-    width:300px;margin:10px;
+    width:270px;margin:10px;
     background-color: #ffcccc;
+}
+@media (max-width:1200px){
+    main>.item{
+        width:45%;
+    }
+}
+@media (max-width:500px){
+    main>.item{
+        width:90%;
+    }
 }
