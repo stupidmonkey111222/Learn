@@ -1,0 +1,24 @@
+nav>.logo{
+    background-color: #ffcccc;
+}
+
+nav>.menu{
+    background-color: #ccccff;
+}
+
+nav>.user{
+    background-color: #ccffcc;
+}
+
+main{
+    display:flex;
+    justify-content: center;  #水平对齐
+    align-items:stretch;   #垂直对齐
+    background-color: #cccccc;
+}
+
+main>.item{
+    flex:none;
+    width:300px;margin:10px;
+    background-color: #ffcccc;
+}

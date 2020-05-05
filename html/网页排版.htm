@@ -2,6 +2,7 @@
 <html>
     <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
     <title>学习网站排版</title>
     <style type="text/css">
     .head{
@@ -19,6 +20,10 @@
     .title{
         font-weight: bold;
     }
+    @media screen and (max-width:600px){
+        .head{font-size:20px;}
+        .content{width:100%;text-align: center;}
+    }
     </style>
     </head>
 
@@ -33,9 +38,18 @@
             </div>
                 
             <div class="box">
-                <div class="title">我的个人兴趣:耍猴</div></div>
+                <div class="title">我的个人兴趣</div>
+                <div>耍猴</div>
+                <div>打猴子</div>
+                <div>拍死猴子</div>
+            </div>
+
             <div class="box">
-                <div class="title">欢迎与我联络:于小卉大笨蛋</div></div>
+                <div class="title">欢迎与我联络</div>
+                <div>写信给我</div>
+                <div>请打电话</div>
+                <div>传个讯息</div>
+            </div>
         </div>
     </body>
 </html>
