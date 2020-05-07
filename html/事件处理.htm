@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>事件处理</title>
+    <script type="text/javascript">
+        // function over(element) {
+        //     element.style.color = "red";
+        // }
+        // function out(element) {
+        //     element.style.color = "black";
+        // }
+            function init(){
+                // var btn=document.getElementById("btn");
+                // btn.onclick=function(){
+                //     alert("clicked");
+                // }
+
+                var handler=function(){
+                    alert("clicked");
+                };
+                btn.addEventListener("click",handler);
+            }
+
+    </script>
+</head>
+
+<body onload="init();">
+    <button id="btn";>click</button>
+    <!-- <span onmouseover="over(this)" ; onmouseout="out(this)" ;>Test</span> -->
+</body>
+
+</html>
